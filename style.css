@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    --bg-1: hsl(217, 28%, 15%);
+    --bg-2: hsl(218, 28%, 13%);
+    --bg-3: hsl(219, 30%, 18%);
+    --bg-4: hsl(216, 53%, 9%);
+    --accent-1: hsl(176, 68%, 64%);
+    --accent-2: hsl(198, 60%, 50%);
+    --main-text: white;
+}
+
+body {
+    font-family: 'Raleway', 'Open Sans';
+    font-size: 14px;
+    background-color: var(--bg-2);
+    color: var(--main-text);
+}
+
+body a {
+    color: var(--accent-1);
+}
+
+body .btn {
+    background: linear-gradient(to right, var(--accent-1), var(--accent-2));
+    color: white;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
