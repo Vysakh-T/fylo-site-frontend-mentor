@@ -1,41 +1,114 @@
-* {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    box-sizing: border-box;
-}
-
-html {
-    --bg-1: hsl(217, 28%, 15%);
-    --bg-2: hsl(218, 28%, 13%);
-    --bg-3: hsl(219, 30%, 18%);
-    --bg-4: hsl(216, 53%, 9%);
-    --accent-1: hsl(176, 68%, 64%);
-    --accent-2: hsl(198, 60%, 50%);
-    --main-text: white;
-}
-
-body {
-    font-family: 'Raleway', 'Open Sans';
-    font-size: 14px;
-    background-color: var(--bg-2);
-    color: var(--main-text);
-}
-
-body a {
-    color: var(--accent-1);
-}
-
-body .btn {
-    background: linear-gradient(to right, var(--accent-1), var(--accent-2));
-    color: white;
-}
-
-.attribution {
-    font-size: 11px;
-    text-align: center;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
-}
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+    
+    html {
+        --bg-1: hsl(217, 28%, 15%);
+        --bg-2: hsl(218, 28%, 13%);
+        --bg-3: hsl(219, 30%, 18%);
+        --bg-4: hsl(216, 53%, 9%);
+        --accent-1: hsl(176, 68%, 64%);
+        --accent-2: hsl(198, 60%, 50%);
+        --main-text: white;
+    }
+    
+    body {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        background-color: var(--bg-2);
+        color: var(--main-text);
+    }
+    
+    nav,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    a,
+    .btn {
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    nav {
+        margin: 50px 40px;
+        padding: 0px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 1vh;
+    }
+    
+    nav svg {
+        cursor: pointer;
+        height: 30px;
+    }
+    
+    nav div {
+        display: flex;
+    }
+    
+    nav div * {
+        cursor: pointer;
+        margin-right: 30px;
+    }
+    
+    body a {
+        color: var(--accent-1);
+    }
+    
+    body .container {
+        margin: 0 16%;
+    }
+    
+    body .btn {
+        background: linear-gradient(to right, var(--accent-1), var(--accent-2));
+        color: white;
+        width: auto;
+        height: auto;
+        font-weight: 700;
+        padding: 10px 30px;
+        text-align: center;
+        display: inline-block;
+        border-radius: 50px;
+        transition: ease-in-out 300ms;
+    }
+    
+    body .btn:hover {
+        transform: translateY(-3px) scale(1.05);
+        cursor: pointer;
+    }
+    
+    body .btn:active {
+        background: linear-gradient(to left, var(--accent-1), var(--accent-2));
+    }
+    
+    body .section-1 {
+        text-align: center;
+        width: auto;
+        height: auto;
+        padding: 0 29%;
+    }
+    
+    body .section-1 * {
+        margin-top: 20px;
+    }
+    
+    body .section-1 img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+    
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
